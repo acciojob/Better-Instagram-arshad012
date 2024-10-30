@@ -10,6 +10,7 @@ function allowDrop(e) {
 }
 
 function drop(e) {
+	e.preventDefault();
 	let targetDiv = e.currentTarget;
 	let tempDiv = targetDiv.id;
 	targetDiv.id = currentDiv.id;
