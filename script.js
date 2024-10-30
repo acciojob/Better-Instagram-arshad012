@@ -2,6 +2,7 @@
 let currentDiv = null;
 function drag(e) {
 	currentDiv = e.target;
+	currentDiv.classList.add('selected');
 }
 
 function allowDrop(e) {
@@ -13,4 +14,5 @@ function drop(e) {
 	let tempDiv = targetDiv.id;
 	targetDiv.id = currentDiv.id;
 	currentDiv.id = tempDiv;
+	currentDiv.classList.remove('selected');
 }
