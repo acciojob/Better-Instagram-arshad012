@@ -17,3 +17,7 @@ function drop(e) {
 	currentDiv.id = tempDiv;
 	currentDiv.classList.remove('selected');
 }
+
+function getBoundingClientRect() {
+	// 
+}
