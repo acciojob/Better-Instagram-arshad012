@@ -11,7 +11,7 @@ function allowDrop(e) {
 
 function drop(e) {
 	e.preventDefault();
-	let targetDiv = e.currentTarget;
+	let targetDiv = e.target;
 	let tempDiv = targetDiv.id;
 	targetDiv.id = currentDiv.id;
 	currentDiv.id = tempDiv;
